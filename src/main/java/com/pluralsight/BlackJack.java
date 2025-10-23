@@ -1,19 +1,21 @@
 package com.pluralsight;
 
-import javax.lang.model.element.Name;
 import java.util.Scanner;
 
 public class BlackJack {
-    Scanner nameScanner = new Scanner(System.in);
+
     public static void main(String[] args) {
+        Scanner nameScanner = new Scanner(System.in);
 
-
-        public static void players() {
             System.out.println(" What is player's 1 name");
+            String name1 = nameScanner.nextLine();
 
-            String name1 = Scanner.nextLine();
-            String name2 = Scanner.nextLine();
-        }
+            System.out.println(" What is player's 2 name");
+            String name2 = nameScanner.nextLine();
+
+        System.out.println("PLayer 1 " + name1);
+        System.out.println("PLayer 2 " + name2);
+
 
         //create the deck
         Deck deck = new Deck();
