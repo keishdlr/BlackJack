@@ -41,6 +41,16 @@ public class BlackJack {
         //print out the value of all the cards in both hands
         System.out.println("This hand is worth " + hand1.getValue());
         System.out.println("This hand is worth " + hand2.getValue());
+
+        // compare each player, the one closes to 21 wins
+        int result = Integer.compare(hand1.getValue(), hand2.getValue());
+        if (result == 0) {
+            System.out.println("It's tied");
+        } else if (result > 0){
+            System.out.println("Player 1 wins " + hand1.getValue());
+        } else {
+            System.out.println("Player 2 wins " + hand2.getValue());
+        }
     }
 
 }
